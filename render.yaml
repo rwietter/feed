@@ -3,7 +3,6 @@ services:
     type: web
     env: docker
     dockerfilePath: ./Dockerfile
-    port: 7070
     buildCommand: ""
     startCommand: "yarr"
     disk:
