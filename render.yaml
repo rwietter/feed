@@ -1,0 +1,13 @@
+services:
+  - name: yarr
+    type: web
+    env: docker
+    dockerfilePath: ./Dockerfile
+    port: 7070
+    buildCommand: ""
+    startCommand: "yarr"
+    disk:
+      name: yarr-data
+      mountPath: /data
+      sizeGB: 1
+    healthCheckPath: /
